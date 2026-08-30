@@ -49,7 +49,8 @@ public class main {
 //
 
 ///ejecicio 3
-
+    Cliente cliente1 = new Cliente("Orellano Pablo", "Pabiel@gmail.com", 50);
+        System.out.println(cliente1);
 
   }
 }
