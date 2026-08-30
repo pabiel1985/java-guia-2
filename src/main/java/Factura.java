@@ -1,4 +1,5 @@
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.UUID;
 
 public class Factura {
@@ -33,4 +34,21 @@ public class Factura {
         this.fecha = LocalDateTime.now();
         this.id = UUID.randomUUID().toString();
     }
+
+    @Override
+    public String toString() {
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+        return "Factura[" +
+                "id=" + id +
+                ", fecha=" + fecha.format(formato) +
+                ", monto=" + monto +
+                ", montoDesc=" + calcularMontoFinal() +
+                ", " + cliente +
+                "]";
+    }
+
+    public double calcularMontoFinal() {
+        return monto - (monto/100* cliente.getDescuento());
+    }
+
 }
