@@ -1,11 +1,5 @@
-public class Cilindro extends Circulo{
+public class Cilindro extends Circulo {
     private double altura;
-    private Circulo circulo;
-
-    public Circulo getCirculo() {
-        return circulo;
-    }
-
 
     public double getAltura() {
         return altura;
@@ -15,23 +9,31 @@ public class Cilindro extends Circulo{
         this.altura = altura;
     }
 
-    public Cilindro(double altura, Circulo circulo) {
-        super(circulo.getRadio(), circulo.getColor());
-        this.altura = altura;
-        this.circulo = circulo;
+    public Cilindro() {
+        super();
+        this.altura = 1.0;
     }
 
+    public Cilindro(double radio, double altura) {
+        super(radio, "rojo");
+        this.altura = altura;
+    }
 
     @Override
     public String toString() {
-        return "Cilindro{" +
-                "altura=" + altura +
-                ", circulo=" + circulo +
+        return "Cilindro subclase de " +
+                super.toString() +
+                " altura=" + altura +
                 '}';
     }
 
-    public double volumen(){
-        return area() * getAltura();
+    @Override
+    public double area() {
+        return (2 * Math.PI * getRadio() * getAltura()) + 2 * super.area();
+    }
+
+    public double volumen() {
+        return super.area() * getAltura();
     }
 
 }

@@ -55,9 +55,14 @@ public class main {
 //        System.out.println(factura1);
 
 /// ejecicio 4
-        Circulo circulo1 = new Circulo(1, "rojo");
-        Cilindro cilindro1 = new Cilindro(1,circulo1);
-        System.out.println(cilindro1);
+        Circulo circulo1 = new Circulo();
+        Cilindro cilindro1 = new Cilindro();
+//        System.out.println(cilindro1);
+//        System.out.println(cilindro1.getRadio());
+//        System.out.println(cilindro1.getAltura());
+//        System.out.println(cilindro1.area());
+        Cilindro cilindro2 = new Cilindro(5.0,10.0);
+        System.out.println(cilindro2);
     }
 }
 
