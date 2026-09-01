@@ -19,6 +19,9 @@ public class Circulo {
         this.color = color;
     }
 
+    public Circulo() {
+        this(1.0,"rojo");
+    }
 
     public Circulo(double radio, String color) {
         this.radio = radio;
@@ -28,7 +31,7 @@ public class Circulo {
     @Override
     public String toString() {
         return "Circulo{" +
-                "radio=" + radio +
+                " radio=" + radio +
                 ", color='" + color + '\'' +
                 '}';
     }
