@@ -1,3 +1,5 @@
+package ejercicio2;
+
 public class Autor {
     private String nombre;
     private String apellido;
@@ -45,7 +47,7 @@ public class Autor {
 
     @Override
     public String toString() {
-        return "Autor\n" +
+        return "ejer2.Autor\n" +
                 "Nombre: " + nombre + "\n" +
                 "Apellido: " + apellido + "\n" +
                 "Email: " + email + "\n" +

@@ -1,3 +1,5 @@
+package ejercicio3;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.UUID;
@@ -38,7 +40,7 @@ public class Factura {
     @Override
     public String toString() {
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
-        return "Factura[" +
+        return "ejercicio3.Factura[" +
                 "id=" + id +
                 ", fecha=" + fecha.format(formato) +
                 ", monto=" + monto +

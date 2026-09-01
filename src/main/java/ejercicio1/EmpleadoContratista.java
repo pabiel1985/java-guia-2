@@ -1,4 +1,6 @@
-public class EmpleadoContratista extends Empleado{
+package ejercicio1;
+
+public class EmpleadoContratista extends Empleado {
     private double horasTrabajadas;
     private double tarifaProyecto;
 

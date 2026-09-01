@@ -1,3 +1,5 @@
+package ejercicio4;
+
 public class Cilindro extends Circulo {
     private double altura;
 
@@ -21,7 +23,7 @@ public class Cilindro extends Circulo {
 
     @Override
     public String toString() {
-        return "Cilindro subclase de " +
+        return "ejercicio4.Cilindro subclase de " +
                 super.toString() +
                 " altura=" + altura +
                 '}';

@@ -1,3 +1,5 @@
+package ejercicio1;
+
 public class EmpleadoTiempoCompleto extends Empleado {
 
     @Override

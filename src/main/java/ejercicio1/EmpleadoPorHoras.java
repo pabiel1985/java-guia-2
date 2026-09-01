@@ -1,3 +1,5 @@
+package ejercicio1;
+
 public class EmpleadoPorHoras extends Empleado {
     private double horasTrabajadas;
 

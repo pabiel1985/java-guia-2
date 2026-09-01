@@ -1,10 +1,15 @@
+import ejercicio1.Empleado;
+import ejercicio1.EmpleadoContratista;
+import ejercicio1.EmpleadoPorHoras;
+import ejercicio1.EmpleadoTiempoCompleto;
+
 import java.util.Scanner;
 
-public class main {
+public class App {
     public static void main(String[] args) {
-        Empleado empleado1 = new EmpleadoTiempoCompleto("Juan", 20000);
-        Empleado empleado2 = new EmpleadoPorHoras("Pedro", 5000, 8);
-        Empleado empleado3 = new EmpleadoContratista("Pablo", 2004, 11, 5500);
+//        Empleado empleado1 = new EmpleadoTiempoCompleto("Juan", 20000);
+//        Empleado empleado2 = new EmpleadoPorHoras("Pedro", 5000, 8);
+//        Empleado empleado3 = new EmpleadoContratista("Pablo", 2004, 11, 5500);
         Scanner sc = new Scanner(System.in);
 //        int opcion=0;
 //
@@ -34,9 +39,9 @@ public class main {
 //            }
 //        }
 ///ejercio 2
-//        Autor autor1= new Autor("Joshua", "Bloch", "joshua@email.com", 'M');
+//        ejer2.Autor autor1= new ejer2.Autor("Joshua", "Bloch", "joshua@email.com", 'M');
 //        System.out.println(autor1);
-//        Libro libro1 = new Libro("Effective Java", 450, 150, autor1);
+//        ejer2.Libro libro1 = new ejer2.Libro("Effective Java", 450, 150, autor1);
 //        System.out.println(libro1);
 //        libro1.setPrecio(500);
 //        libro1.setStock(200);
@@ -49,20 +54,25 @@ public class main {
 //
 
 /////ejecicio 3
-//        Cliente cliente1 = new Cliente("Orellano Pablo", "Pabiel@gmail.com", 50);
+//        ejercicio3.Cliente cliente1 = new ejercicio3.Cliente("Orellano Pablo", "Pabiel@gmail.com", 50);
 //        //  System.out.println(cliente1);
-//        Factura factura1 = new Factura(5000, cliente1);
+//        ejercicio3.Factura factura1 = new ejercicio3.Factura(5000, cliente1);
 //        System.out.println(factura1);
 
 /// ejecicio 4
-        Circulo circulo1 = new Circulo();
-        Cilindro cilindro1 = new Cilindro();
+//        ejercicio4.Circulo circulo1 = new ejercicio4.Circulo();
+//        ejercicio4.Cilindro cilindro1 = new ejercicio4.Cilindro();
 //        System.out.println(cilindro1);
 //        System.out.println(cilindro1.getRadio());
 //        System.out.println(cilindro1.getAltura());
 //        System.out.println(cilindro1.area());
-        Cilindro cilindro2 = new Cilindro(5.0,10.0);
-        System.out.println(cilindro2);
+//        ejercicio4.Cilindro cilindro2 = new ejercicio4.Cilindro(5.0,10.0);
+//        System.out.println(cilindro2);
+
+/// ejercico 5
+       // ejercicio5.Persona persona1 = new ejercicio5.Estudiante(31328208, "Pablo", "Orellano", "paaf@ggg.com", )
+
+
     }
 }
 

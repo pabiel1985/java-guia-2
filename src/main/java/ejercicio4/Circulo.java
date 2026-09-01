@@ -1,3 +1,5 @@
+package ejercicio4;
+
 public class Circulo {
     private double radio;
     private String color;
@@ -30,7 +32,7 @@ public class Circulo {
 
     @Override
     public String toString() {
-        return "Circulo{" +
+        return "ejercicio4.Circulo{" +
                 " radio=" + radio +
                 ", color='" + color + '\'' +
                 '}';

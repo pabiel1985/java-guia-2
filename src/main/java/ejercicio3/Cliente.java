@@ -1,3 +1,5 @@
+package ejercicio3;
+
 import java.util.UUID;
 
 public class Cliente {
@@ -43,7 +45,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" +
+        return "ejercicio3.Cliente{" +
                 "id='" + id + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", email='" + email + '\'' +
