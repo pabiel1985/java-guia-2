@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class main {
     static void main(String[] args) {
-    Empleado empleado1 = new EmpleadoTiempoCompleto("Juan", 20000);
-    Empleado empleado2 = new EmpleadoPorHoras("Pedro", 5000, 8);
-    Empleado empleado3 = new EmpleadoContratista("Pablo", 2004,11,5500);
+        Empleado empleado1 = new EmpleadoTiempoCompleto("Juan", 20000);
+        Empleado empleado2 = new EmpleadoPorHoras("Pedro", 5000, 8);
+        Empleado empleado3 = new EmpleadoContratista("Pablo", 2004, 11, 5500);
         Scanner sc = new Scanner(System.in);
 //        int opcion=0;
 //
@@ -48,10 +48,21 @@ public class main {
 //        libro1.mostrarInfo();
 //
 
-///ejecicio 3
-    Cliente cliente1 = new Cliente("Orellano Pablo", "Pabiel@gmail.com", 50);
-      //  System.out.println(cliente1);
-    Factura factura1 = new Factura(5000, cliente1);
-    System.out.println(factura1);
-  }
+/////ejecicio 3
+//        Cliente cliente1 = new Cliente("Orellano Pablo", "Pabiel@gmail.com", 50);
+//        //  System.out.println(cliente1);
+//        Factura factura1 = new Factura(5000, cliente1);
+//        System.out.println(factura1);
+
+        /// ejecicio 4
+        Circulo circulo1 = new Circulo(1, "rojo");
+        Cilindro cilindro1 = new Cilindro(1, circulo1);
+        System.out.println(cilindro1);
+    }
 }
+
+
+
+
+
+
