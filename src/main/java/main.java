@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class main {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Empleado empleado1 = new EmpleadoTiempoCompleto("Juan", 20000);
         Empleado empleado2 = new EmpleadoPorHoras("Pedro", 5000, 8);
         Empleado empleado3 = new EmpleadoContratista("Pablo", 2004, 11, 5500);
@@ -54,9 +54,9 @@ public class main {
 //        Factura factura1 = new Factura(5000, cliente1);
 //        System.out.println(factura1);
 
-        /// ejecicio 4
+/// ejecicio 4
         Circulo circulo1 = new Circulo(1, "rojo");
-        Cilindro cilindro1 = new Cilindro(1, circulo1);
+        Cilindro cilindro1 = new Cilindro(1,circulo1);
         System.out.println(cilindro1);
     }
 }

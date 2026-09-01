@@ -16,10 +16,11 @@ public class Cilindro extends Circulo{
     }
 
     public Cilindro(double altura, Circulo circulo) {
-        super(getRadio(), getColor());
+        super(circulo.getRadio(), circulo.getColor());
         this.altura = altura;
         this.circulo = circulo;
     }
+
 
     @Override
     public String toString() {
