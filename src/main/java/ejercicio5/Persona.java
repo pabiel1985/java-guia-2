@@ -7,6 +7,10 @@ abstract public class Persona {
     private String email;
     private String direccion;
 
+    public Persona() {
+
+    }
+
     public long getDni() {
         return dni;
     }
@@ -57,13 +61,12 @@ abstract public class Persona {
 
     @Override
     public String toString() {
-        return "ejercicio5.Persona{" +
+        return "Persona " +
                 "dni=" + dni +
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 ", email='" + email + '\'' +
-                ", direccion='" + direccion + '\'' +
-                '}';
+                ", direccion='" + direccion + '\'';
     }
 
 

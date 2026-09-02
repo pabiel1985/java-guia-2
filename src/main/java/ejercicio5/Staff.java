@@ -26,9 +26,13 @@ public class Staff extends  Persona{
         this.turno = turno;
     }
 
+    public Staff() {
+    }
+
     @Override
     public String toString() {
         return "ejercicio5.Staff{" +
+                super.toString() +
                 "salario=" + salario +
                 ", turno='" + turno + '\'' +
                 '}';

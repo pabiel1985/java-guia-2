@@ -37,4 +37,16 @@ public class Estudiante extends Persona{
         this.carrera = carrera;
     }
 
+    public Estudiante() {
+    }
+
+    @Override
+    public String toString() {
+        return "Estudiante{ " +
+                super.toString() +
+                " añoIngreso=" + añoIngreso +
+                ", cuotaMensual=" + cuotaMensual +
+                ", carrera='" + carrera + '\'' +
+                '}';
+    }
 }

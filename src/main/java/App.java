@@ -73,10 +73,58 @@ public class App {
 //        System.out.println(cilindro2);
 
 /// ejercico 5
-       Persona persona1 = new ejercicio5.Estudiante(31328208, "Pablo", "Orellano", "paaf@ggg.com", )
+      Persona estudiante1 = new Estudiante(12345678, "Pablo", "Orellano", "pablo@mail.com",
+              "Luro 1234", 2025,2500.25, "Monopatin");
+      Persona estudiante2 = new Estudiante(28456731, "Juan", "Gomez", "juan@gmail.com",
+                "San Martin 456", 2024, 3200.50, "Ingenieria");
+      Persona estudiante3 = new Estudiante(36789124, "Maria", "Fernandez", "maria@gmail.com",
+                "Belgrano 789", 2023, 2800.75, "Programacion");
+      Persona estudiante4 = new Estudiante(42123456, "Lucas", "Rodriguez", "lucas@gmail.com",
+                "Rivadavia 321", 2025, 3500.00, "Electromecanica");
 
+      Persona staff1 = new Staff(32569874, "Jose", "Perez", "Jose@mail.com", "San martin 586",
+              458965.24, "mañana");
+      Persona staff2 = new Staff(28745163, "Carlos", "Gomez", "Carlos@mail.com", "Belgrano 742",
+                389520.75, "tarde");
 
+      Persona staff3 = new Staff(41632785, "Laura", "Fernandez", "Laura@mail.com", "Rivadavia 321",
+                512680.40, "mañana");
+
+      Persona staff4 = new Staff(35419862, "Miguel", "Rodriguez", "Miguel@mail.com", "Mitre 915",
+                425730.90, "noche");
+
+      Persona[] personas = new Persona[8];
+      personas[0] = estudiante1;
+      personas[1] = estudiante2;
+      personas[2] = estudiante3;
+      personas[3] = estudiante4;
+      personas[4] = staff1;
+      personas[5] = staff2;
+      personas[6] = staff3;
+      personas[7] = staff4;
+        int cantidadEstudiantes = 0;
+        int cantidadStaff = 0;
+      for (int i = 0; i < personas.length; i++) {
+          if (personas[i] instanceof Estudiante) {
+            cantidadEstudiantes++;
+        }
+        if (personas[i] instanceof Staff) {
+                cantidadStaff++;
+            }
+      }
+        System.out.println(cantidadEstudiantes);
+      System.out.println(cantidadStaff);
+
+      double sumaCuota = 0;
+      for (int i = 0; i < personas.length; i++) {
+        if (personas[i] instanceof Estudiante) {
+          sumaCuota = sumaCuota + ((Estudiante) personas[i]).getCuotaMensual();
+        }
+      }
+      System.out.println(sumaCuota);
+      System.out.println(estudiante1);
     }
+
 }
 
 
