@@ -2,6 +2,9 @@ import ejercicio1.Empleado;
 import ejercicio1.EmpleadoContratista;
 import ejercicio1.EmpleadoPorHoras;
 import ejercicio1.EmpleadoTiempoCompleto;
+import ejercicio5.Estudiante;
+import ejercicio5.Persona;
+import ejercicio5.Staff;
 
 import java.util.Scanner;
 
@@ -70,7 +73,7 @@ public class App {
 //        System.out.println(cilindro2);
 
 /// ejercico 5
-       // ejercicio5.Persona persona1 = new ejercicio5.Estudiante(31328208, "Pablo", "Orellano", "paaf@ggg.com", )
+       Persona persona1 = new ejercicio5.Estudiante(31328208, "Pablo", "Orellano", "paaf@ggg.com", )
 
 
     }
